@@ -1,5 +1,9 @@
 {
-  "name": "stickies-clipboard",
+  "name": "@stickies/clipboard",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stickies-WTF/stickies-clipboard.git"
+  },
   "version": "0.1.0",
   "description": "My new module",
   "main": "build/index.js",
@@ -21,7 +25,6 @@
     "stickies-clipboard",
     "StickiesClipboard"
   ],
-  "repository": "https://github.com/cajacko/stickies-clipboard",
   "bugs": {
     "url": "https://github.com/cajacko/stickies-clipboard/issues"
   },
