@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "stickies-clipboard": ["../src/index"],
+      "stickies-clipboard/*": ["../src/*"]
+    }
+  }
+}
