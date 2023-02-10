@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android", "web"],
+  "ios": {
+    "modules": ["StickiesClipboardModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.stickiesclipboard.StickiesClipboardModule"]
+  }
+}
