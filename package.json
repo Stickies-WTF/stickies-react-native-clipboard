@@ -4,6 +4,9 @@
     "type": "git",
     "url": "https://github.com/Stickies-WTF/stickies-clipboard.git"
   },
+  "publishConfig": {
+    "@Stickies-WTF:registry": "https://npm.pkg.github.com"
+  },
   "version": "0.2.0",
   "description": "My new module",
   "main": "build/index.js",
