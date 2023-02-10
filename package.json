@@ -1,10 +1,10 @@
 {
-  "name": "@stickies/clipboard",
+  "name": "@Stickies-WTF/stickies-clipboard",
   "repository": {
     "type": "git",
     "url": "https://github.com/Stickies-WTF/stickies-clipboard.git"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "My new module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -25,12 +25,7 @@
     "stickies-clipboard",
     "StickiesClipboard"
   ],
-  "bugs": {
-    "url": "https://github.com/cajacko/stickies-clipboard/issues"
-  },
-  "author": "Charlie Jackson <charlie@charliejackson.com> (https://github.com/cajacko)",
   "license": "MIT",
-  "homepage": "https://github.com/cajacko/stickies-clipboard#readme",
   "dependencies": {
     "expo-file-system": "~15.1.1"
   },
