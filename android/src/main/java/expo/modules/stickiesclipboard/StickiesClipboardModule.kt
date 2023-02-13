@@ -1,5 +1,12 @@
 package expo.modules.stickiesclipboard
 
+import android.content.ClipboardManager
+import android.content.Context
+import android.content.ClipData
+import android.net.Uri
+import java.io.File
+import androidx.core.content.FileProvider
+
 import expo.modules.kotlin.modules.Module
 import expo.modules.kotlin.modules.ModuleDefinition
 
@@ -31,7 +38,25 @@ class StickiesClipboardModule : Module() {
     AsyncFunction("setValueAsync") { value: String ->
       // Send an event to JavaScript.
       sendEvent("onChange", mapOf(
-        "value" to value
+        "value" to "Copying"
+      ))
+
+      val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+      val file = File(value)
+      val imageUri = FileProvider.getUriForFile(context, context.applicationInfo.packageName + ".ClipboardFileProvider", file)
+
+//      val imageUri = ClipboardFileProvider.getUriForFile(
+//              context,
+//              context.applicationInfo.packageName + ".ClipboardFileProvider",
+//              file
+//      )
+
+      val clip = ClipData.newUri(context.contentResolver, "Animated GIF", imageUri)
+      clipboard.setPrimaryClip(clip)
+
+      // Send an event to JavaScript.
+      sendEvent("onChange", mapOf(
+        "value" to "Copy finished"
       ))
     }
 
@@ -44,4 +69,9 @@ class StickiesClipboardModule : Module() {
       }
     }
   }
+
+  private val context
+    get() = requireNotNull(appContext.reactContext) {
+      "React Application Context is null"
+    }
 }

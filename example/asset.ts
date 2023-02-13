@@ -84,5 +84,7 @@ export async function getAssetBase64(asset: Asset): Promise<string> {
 export async function copyAssetToClipboard(asset: Asset): Promise<void> {
   const uri = await getAssetUri(asset);
 
+  console.log("uri", uri);
+
   await StickiesClipboard.setValueAsync(uri);
 }
