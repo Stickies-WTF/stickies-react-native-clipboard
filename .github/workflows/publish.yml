@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: "16.x"
           registry-url: "https://npm.pkg.github.com"
-          scope: "@stickies-wtf"
+          scope: "@Stickies-WTF"
       - run: npm ci
       - run: npm publish
         env:

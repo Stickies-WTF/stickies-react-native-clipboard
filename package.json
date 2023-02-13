@@ -1,11 +1,11 @@
 {
-  "name": "@stickies-wtf/stickies-clipboard",
+  "name": "@Stickies-WTF/stickies-clipboard",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stickies-wtf/stickies-clipboard.git"
+    "url": "https://github.com/Stickies-WTF/stickies-clipboard.git"
   },
   "publishConfig": {
-    "@stickies-wtf:registry": "https://npm.pkg.github.com"
+    "@Stickies-WTF:registry": "https://npm.pkg.github.com"
   },
   "version": "0.5.0",
   "description": "My new module",
