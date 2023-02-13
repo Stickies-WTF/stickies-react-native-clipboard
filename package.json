@@ -2,7 +2,7 @@
   "name": "@stickies-wtf/stickies-clipboard",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Stickies-WTF/stickies-clipboard.git"
+    "url": "https://github.com/stickies-wtf/stickies-clipboard.git"
   },
   "publishConfig": {
     "@stickies-wtf:registry": "https://npm.pkg.github.com"
