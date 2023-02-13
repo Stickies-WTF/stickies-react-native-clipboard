@@ -7,10 +7,12 @@
   "publishConfig": {
     "@Stickies-WTF:registry": "https://npm.pkg.github.com"
   },
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "My new module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "author": "Charlie Jackson <charlie@charliejackson.com> (https://github.com/cajacko)",
+  "homepage": "https://github.com/Stickies-WTF/stickies-react-native-clipboard#readme",
   "scripts": {
     "build": "expo-module build",
     "clean": "expo-module clean",
