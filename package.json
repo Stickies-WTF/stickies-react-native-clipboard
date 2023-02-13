@@ -7,7 +7,7 @@
   "publishConfig": {
     "@Stickies-WTF:registry": "https://npm.pkg.github.com"
   },
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "My new module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
